@@ -12,7 +12,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    adrianjadev | [2:09:58/2:43:45]
+                    adrianjadev
                 </motion.span>
                 <div className="social">
                     <a href="#"><img src="/facebook.png" alt="facebook" /></a>
