@@ -28,7 +28,7 @@ section {
 
 // For the Mobile Responsiveness
 @mixin mobile {
-    @media (max-width:738px) {
+    @media (min-width:738px) {
         @content;
     }
 }

@@ -102,6 +102,17 @@
             overflow: hidden;
         }
 
+
+        @include desktop {
+            height: 65%;
+            width: 100%;
+            top: 500px;
+            bottom: 0;
+            margin: auto;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
         img {
             height: 1250px;
             object-fit: contain;
