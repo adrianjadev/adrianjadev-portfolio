@@ -1,6 +1,5 @@
 @import "../../app.scss";
 
-
 .hero {
     height: calc(100vh - 100px);
     overflow: hidden;
@@ -20,71 +19,133 @@
     }
 
     .wrapper {
-        max-width: 1366px;
+        max-width: 1800px;
         height: 100%;
         margin: auto;
 
         .textContainer {
-            width: 50%;
+            width: 75%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 40px;
+            padding: 1rem;
 
             @include mobile {
-                height: 50%;
+                height: 75%;
                 width: 100%;
-                gap: 20px;
-                font-size: 5px;
+                gap: 1rem;
                 text-align: center;
                 align-items: center;
             }
 
+            @include tablet {
+                height: 75%;
+                width: 100%;
+                gap: 1rem;
+                text-align: center;
+                align-items: center;
+                padding: 2rem;
+            }
+
+            @include desktop {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem;
+                margin-left: 4rem;
+            }
+
+            @include desktop-lg {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem;
+                margin-left: 5rem;
+            }
+
+            @include desktop-4k {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem;
+                margin-left: 4rem;
+            }
+
             h2 {
-                font-size: 30px;
+                font-size: 2.2rem;
                 color: orange;
-                letter-spacing: 10px;
+                letter-spacing: 0.25rem;
 
-                @include mobile {}
+                @include mobile {
+                    font-size: 1.5rem;
+                    letter-spacing: 0.25rem;
+                }
 
-                // @include mobile-md {}
+                @include tablet {
+                    font-size: 1.75rem;
+                    letter-spacing: 0.25rem;
+                }
 
-                // @include mobile-lg {
-                //     font-size: 30px;
-                //     margin: auto;
-                // }
+                @include desktop {
+                    font-size: 1.5rem;
+                    color: orange;
+                    letter-spacing: 0.25rem;
+                }
 
-                // @include tablet {
-                //     font-size: 30px;
-                //     margin: auto;
-                // }
+                @include desktop-lg {
+                    font-size: 1.75rem;
+                    color: orange;
+                    letter-spacing: 0.25rem;
+                }
 
-                // @include laptop {
-                //     font-size: 30px;
-                //     margin: auto;
-                // }
-
-                // @include laptop-lg {
-                //     font-size: 30px;
-                //     margin: auto;
-                // }
-
-                // @include screen-4k {
-                //     font-size: 30px;
-                //     margin: auto;
-                // }
-
+                @include desktop-4k {
+                    font-size: 3rem;
+                    color: orange;
+                    letter-spacing: 1rem;
+                }
             }
 
             h1 {
                 z-index: 900;
-                font-size: 90px;
-                letter-spacing: 2px;
+                font-size: 4.5rem;
+                padding: 1rem;
+                margin: 1rem;
 
                 @include mobile {
-                    font-size: 40px;
-                    padding: 25px;
+                    z-index: 900;
+                    font-size: 2.5rem;
+                    padding: 1rem;
+                    margin: 1rem;
+                }
+
+                @include tablet {
+                    z-index: 900;
+                    font-size: 2.75rem;
+                    padding: 3rem;
+                    margin: 1rem;
+                }
+
+                @include desktop {
+                    z-index: 900;
+                    font-size: 2.5rem;
+                }
+
+                @include desktop-lg {
+                    z-index: 999;
+                    font-size: 2.5rem;
+                    padding: 2rem;
+                }
+
+                @include desktop-4k {
+                    z-index: 900;
+                    font-size: 5rem;
                 }
             }
 
@@ -111,51 +172,50 @@
 
     .imageContainer {
         // Hero image container
-        z-index: 999;
         position: absolute;
-        top: 0%;
-        right: 18%;
-
-        @include mobile {
-            height: 65%;
-            width: 100%;
-            top: 500px;
-            bottom: 0;
-            margin: auto;
-            overflow: hidden;
-            right: 17%;
-        }
-
-        @include desktop {
-            height: 65%;
-            width: 100%;
-            top: 500px;
-            bottom: 0;
-            margin: auto;
-            object-fit: cover;
-            overflow: hidden;
-        }
+        display: flex;
+        top: 5rem;
+        float: right;
 
         img {
             height: 1250px;
             object-fit: contain;
 
             @include mobile {
-                width: 100%;
-                height: 100%;
-                padding-left: 15rem;
+                display: none;
             }
 
             @include tablet {
-                width: 100%;
-                height: 100%;
-                padding-left: 15rem;
+                display: none;
             }
 
             @include desktop {
-                width: 100%;
-                height: 100%;
-                // padding-left: 15rem;
+                z-index: 850;
+                position: absolute;
+                display: flex;
+                padding-left: 60vmin;
+                height: 85vmin;
+                top: -3rem;
+            }
+
+            @include desktop-lg {
+                z-index: 850;
+                position: absolute;
+                display: flex;
+                padding-left: 60vmin;
+                height: 90vmin;
+                left: 15rem;
+                top: -3rem;
+            }
+
+            @include desktop-4k {
+                z-index: 850;
+                position: absolute;
+                display: flex;
+                padding-left: 60vmin;
+                height: 90vmin;
+                left: 30vmin;
+                top: 5rem;
             }
         }
 

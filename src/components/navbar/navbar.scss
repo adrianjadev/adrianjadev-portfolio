@@ -12,8 +12,38 @@
         justify-content: space-between;
 
         @include mobile {
+            flex: 1;
             justify-content: flex-end;
-            padding: 20px;
+            padding: 15px;
+            margin-right: 1rem;
+        }
+
+        @include tablet {
+            flex: 1;
+            justify-content: flex-end;
+            padding: 15px;
+            margin-right: 2.5rem;
+        }
+
+        @include desktop {
+            flex: 1;
+            justify-content: flex-end;
+            padding: 15px;
+            margin-right: 2rem;
+        }
+
+        @include desktop-lg {
+            flex: 1;
+            justify-content: flex-end;
+            padding: 15px;
+            margin-right: 2rem;
+        }
+
+        @include desktop-4k {
+            flex: 1;
+            justify-content: flex-end;
+            padding: 5px;
+            margin-right: 2rem;
         }
 
         span {
@@ -22,6 +52,29 @@
 
             @include mobile {
                 display: none;
+            }
+
+            @include tablet {
+                display: none;
+            }
+
+            @include desktop {
+                flex: 1;
+                margin-left: 8rem;
+                display: flex;
+            }
+
+            @include desktop-lg {
+                flex: 1;
+                margin-left: -45rem;
+                display: flex;
+            }
+
+            @include desktop-4k {
+                flex: 1;
+                margin-left: -65rem;
+                display: flex;
+
             }
         }
 

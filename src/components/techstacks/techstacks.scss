@@ -18,6 +18,24 @@
             @include mobile {
                 font-size: 45px;
             }
+
+            @include tablet {
+                font-size: 45px;
+            }
+
+            @include desktop {
+                font-size: 45px;
+            }
+
+            @include desktop-lg {
+                font-size: 45px;
+            }
+
+            @include desktop-4k {
+                font-size: 45px;
+            }
+
+
         }
     }
 
@@ -37,7 +55,7 @@
         }
 
         .wrapper {
-            max-width: 1366px;
+            max-width: 1800px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -58,6 +76,7 @@
                     // align-self: center;
                     // text-align: center;
                     flex-direction: column;
+                    display: flex;
                 }
 
                 img {
@@ -70,6 +89,26 @@
                         height: 100px;
                         width: 100px;
                         padding: 10px;
+                    }
+
+                    @include tablet {
+                        padding-left: 10%;
+                        padding-top: 10%;
+                    }
+
+                    @include desktop {
+                        padding-left: 10%;
+                        padding-top: 10%;
+                    }
+
+                    @include desktop-lg {
+                        padding-left: 10%;
+                        padding-top: 10%;
+                    }
+
+                    @include desktop-4k {
+                        padding-left: 10%;
+                        padding-top: 10%;
                     }
                 }
 
