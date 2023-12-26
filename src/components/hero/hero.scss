@@ -42,7 +42,7 @@
 
             h2 {
                 font-size: 30px;
-                color: #D6B4FC;
+                color: orange;
                 letter-spacing: 10px;
 
                 @include mobile {
@@ -98,8 +98,8 @@
             top: 500px;
             bottom: 0;
             margin: auto;
-            object-fit: cover;
             overflow: hidden;
+            right: 17%;
         }
 
 

@@ -1,7 +1,6 @@
 html {
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    // scroll-snap-type: y mandatory smooth;
+    // scroll-behavior: smooth;
 }
 
 * {
@@ -28,7 +27,7 @@ section {
 
 // For the Mobile Responsiveness
 @mixin mobile {
-    @media (min-width:738px) {
+    @media (max-width:1170px) {
         @content;
     }
 }

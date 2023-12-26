@@ -80,9 +80,12 @@
 
                 @include mobile {
                     transform: none !important;
-                    padding: 10px;
+                    max-width: 1366px;
+                    padding-top: 50px;
                     align-items: center;
                     text-align: center;
+                    margin-left: 18%;
+                    margin-right: 18%;
                 }
 
                 h2 {
