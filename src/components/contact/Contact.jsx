@@ -44,17 +44,17 @@ const Contact = () => {
     return (
         <motion.div className="contact" variants={variants} initial="initial" whileInView="animate">
             <motion.div className="textContainer">
-                <motion.h1>Let's work together</motion.h1>
+                <motion.h1>Let's work together!</motion.h1>
                 <motion.div className="item">
-                    <h2>Mail</h2>
+                    <h2>Mail:</h2>
                     <span>adrianjademanaday@gmail.com</span>
                 </motion.div>
                 <motion.div className="item">
-                    <h2>Address</h2>
+                    <h2>Address:</h2>
                     <span>Commonwealth QC. Metro Manila, Philippines</span>
                 </motion.div>
                 <motion.div className="item">
-                    <h2>Phone</h2>
+                    <h2>Phone:</h2>
                     <span>+63 936 068 1329</span>
                 </motion.div>
 
