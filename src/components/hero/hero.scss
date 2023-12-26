@@ -1,5 +1,6 @@
 @import "../../app.scss";
 
+
 .hero {
     height: calc(100vh - 100px);
     overflow: hidden;
@@ -45,10 +46,35 @@
                 color: orange;
                 letter-spacing: 10px;
 
-                @include mobile {
-                    font-size: 25px;
+                @include mobile {}
 
-                }
+                // @include mobile-md {}
+
+                // @include mobile-lg {
+                //     font-size: 30px;
+                //     margin: auto;
+                // }
+
+                // @include tablet {
+                //     font-size: 30px;
+                //     margin: auto;
+                // }
+
+                // @include laptop {
+                //     font-size: 30px;
+                //     margin: auto;
+                // }
+
+                // @include laptop-lg {
+                //     font-size: 30px;
+                //     margin: auto;
+                // }
+
+                // @include screen-4k {
+                //     font-size: 30px;
+                //     margin: auto;
+                // }
+
             }
 
             h1 {
@@ -61,7 +87,6 @@
                     padding: 25px;
                 }
             }
-
 
             .buttons {
                 z-index: 900;
@@ -76,7 +101,6 @@
                     font-weight: 300;
                     cursor: pointer;
                 }
-
             }
 
             img {
@@ -101,7 +125,6 @@
             overflow: hidden;
             right: 17%;
         }
-
 
         @include desktop {
             height: 65%;
@@ -148,4 +171,5 @@
         width: 50%;
         font-weight: bold;
     }
+
 }

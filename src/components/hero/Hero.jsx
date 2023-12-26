@@ -50,7 +50,7 @@ const Hero = () => {
                     initial="initial"
                     animate="animate">
                     {/* All of the children elements will render the same initial and animate prop of the parent element */}
-                    <motion.h2 variants={textVariants} >ADRIAN JADE MANADAY</motion.h2>
+                    <motion.h2 className="TestH2" variants={textVariants} >ADRIAN JADE MANADAY</motion.h2>
                     <motion.h1 variants={textVariants} >
                         <motion.b whileHover={{ color: "orange" }}>Full Stack Software Dev
                         </motion.b> & <motion.span whileHover={{ color: "#d6204e" }}>UI/UX Designer;</motion.span>
