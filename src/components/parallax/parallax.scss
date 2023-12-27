@@ -12,10 +12,37 @@
     h1 {
         font-size: 100px;
         color: orange;
+        background-size: contain;
 
         @include mobile {
-            font-size: 60px;
+            z-index: 999;
+            font-size: 3rem;
             background-size: contain;
+        }
+
+        @include tablet {
+            z-index: 999;
+            font-size: 4rem;
+            background-size: contain;
+        }
+
+        @include desktop {
+            z-index: 999;
+            font-size: 5rem;
+            background-size: contain;
+        }
+
+        @include desktop-lg {
+            z-index: 999;
+            font-size: 6rem;
+            background-size: contain;
+        }
+
+        @include desktop-4k {
+            z-index: 999;
+            font-size: 7rem;
+            background-size: contain;
+            margin-top: -8rem;
         }
     }
 
@@ -32,6 +59,28 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
+
+        @include tablet {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @include desktop {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @include desktop-lg {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @include desktop-4k {
+            background-size: contain;
+            width: 120%;
+            height: 120%;
+        }
+
     }
 
     .planets {
@@ -45,7 +94,26 @@
 
         @include mobile {
             background-size: contain;
+            background-repeat: no-repeat;
+        }
 
+        @include tablet {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @include desktop {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @include desktop-lg {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @include desktop-4k {
+            background-size: contain;
             background-repeat: no-repeat;
         }
     }
@@ -62,5 +130,23 @@
         @include mobile {
             width: 120%;
         }
+
+        @include tablet {
+            width: 120%;
+        }
+
+        @include desktop {
+            width: 120%;
+        }
+
+        @include desktop-lg {
+            width: 120%;
+        }
+
+        @include desktop-4k {
+            width: 120%;
+        }
+
+
     }
 }

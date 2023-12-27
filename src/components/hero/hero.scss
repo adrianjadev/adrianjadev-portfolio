@@ -49,33 +49,58 @@
             }
 
             @include desktop {
-                width: 50%;
+                width: 100%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 1rem;
-                margin-left: 4rem;
             }
 
             @include desktop-lg {
-                width: 50%;
+                width: 100%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 1rem;
-                margin-left: 5rem;
             }
 
             @include desktop-4k {
-                width: 50%;
+                width: 100%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 1rem;
-                margin-left: 4rem;
+            }
+
+            h3 {
+                font-size: 2.2rem;
+                letter-spacing: 0.25rem;
+
+                @include mobile {
+                    padding-top: 5rem;
+                    font-size: 1rem;
+                    letter-spacing: 0.25rem;
+                }
+
+                @include tablet {
+                    font-size: 1.25rem;
+                    letter-spacing: 0.25rem;
+                }
+
+                @include desktop {
+                    font-size: 1.50rem;
+                    letter-spacing: 0.25rem;
+                }
+
+                @include desktop-lg {
+                    font-size: 2rem;
+                    letter-spacing: 0.25rem;
+                }
+
+                @include desktop-4k {
+                    font-size: 4rem;
+                    letter-spacing: 0.5rem;
+                }
             }
 
             h2 {
@@ -89,26 +114,23 @@
                 }
 
                 @include tablet {
-                    font-size: 1.75rem;
+                    font-size: 2.25rem;
                     letter-spacing: 0.25rem;
                 }
 
                 @include desktop {
-                    font-size: 1.5rem;
-                    color: orange;
+                    font-size: 2.5rem;
                     letter-spacing: 0.25rem;
                 }
 
                 @include desktop-lg {
-                    font-size: 1.75rem;
-                    color: orange;
+                    font-size: 3.25rem;
                     letter-spacing: 0.25rem;
                 }
 
                 @include desktop-4k {
-                    font-size: 3rem;
-                    color: orange;
-                    letter-spacing: 1rem;
+                    font-size: 6.25rem;
+                    letter-spacing: 0.5rem;
                 }
             }
 
@@ -139,13 +161,14 @@
 
                 @include desktop-lg {
                     z-index: 999;
-                    font-size: 2.5rem;
+                    font-size: 3.25rem;
                     padding: 2rem;
                 }
 
                 @include desktop-4k {
-                    z-index: 900;
-                    font-size: 5rem;
+                    z-index: 999;
+                    font-size: 6.25rem;
+                    padding: 2rem;
                 }
             }
 
@@ -190,22 +213,18 @@
             }
 
             @include desktop {
-                z-index: 850;
-                position: absolute;
-                display: flex;
-                padding-left: 60vmin;
-                height: 85vmin;
-                top: -3rem;
+                display: none;
             }
 
             @include desktop-lg {
-                z-index: 850;
-                position: absolute;
-                display: flex;
-                padding-left: 60vmin;
-                height: 90vmin;
-                left: 15rem;
-                top: -3rem;
+                display: none;
+                // z-index: 850;
+                // position: absolute;
+                // display: flex;
+                // padding-left: 60vmin;
+                // height: 90vmin;
+                // left: 15rem;
+                // top: -3rem;
             }
 
             @include desktop-4k {

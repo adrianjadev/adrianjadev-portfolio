@@ -50,10 +50,11 @@ const Hero = () => {
                     initial="initial"
                     animate="animate">
                     {/* All of the children elements will render the same initial and animate prop of the parent element */}
+                    <motion.h3 variants={textVariants} >Hi there! I'm</motion.h3>
                     <motion.h2 variants={textVariants} >ADRIAN JADE MANADAY</motion.h2>
                     <motion.h1 variants={textVariants} >
-                        <motion.b whileHover={{ color: "orange" }}>Full Stack Software Dev
-                        </motion.b> & <motion.span whileHover={{ color: "#d6204e" }}>UI/UX Designer;</motion.span>
+                        <motion.b whileHover={{ color: "orange" }}>I'm a Full Stack Software Developer;
+                        </motion.b> <br /> && <motion.span whileHover={{ color: "#d6204e" }}>UI/UX Designer</motion.span>
                     </motion.h1>
                     <motion.div className="buttons" variants={textVariants}>
                         <motion.button
@@ -78,11 +79,12 @@ const Hero = () => {
                 animate="animate"
             >
                 {/* Next.js &#9679; Node.js &#9679; MongoDB &#9679; Express.JS */}
+
                 Full Stack Software Developer
             </motion.div>
-            <div className="imageContainer">
+            {/* <div className="imageContainer">
                 <img src="/adrianjadev-hd.png" alt="adrianjadev-hd" />
-            </div>
+            </div> */}
         </div >
     )
 }

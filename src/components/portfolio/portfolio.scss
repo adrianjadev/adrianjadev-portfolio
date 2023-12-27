@@ -11,22 +11,65 @@
         padding-top: 50px;
         text-align: center;
         color: orange;
-        font-size: 36px;
+        font-size: 1rem;
+        margin-top: 0;
 
         @include mobile {
             padding-top: calc(100vh - 100px);
-            font-size: 20px;
+            font-size: 0.60rem;
             bottom: 0;
+        }
+
+        @include tablet {
+            padding-top: calc(100vh - 100px);
+            font-size: 1rem;
+            bottom: 0;
+        }
+
+        @include desktop {
+            padding-top: 5rem;
+            font-size: 1.25rem;
+        }
+
+        @include desktop-lg {
+            padding-top: 5rem;
+            font-size: 1.5rem;
+        }
+
+        @include desktop-4k {
+            padding-top: 5rem;
+            font-size: 2.25rem;
         }
     }
 
     .progressBar {
         height: 10px;
         background-color: white;
+        margin-top: 0;
 
         @include mobile {
-            height: 10px;
-            background-color: white;
+            height: 0.5rem;
+            // margin-top: 2rem;
+        }
+
+        @include tablet {
+            height: 0.75rem;
+            margin-top: 0;
+        }
+
+        @include desktop {
+            height: 0.75rem;
+            margin-top: 0;
+        }
+
+        @include desktop-lg {
+            height: 1.25rem;
+            margin-top: 0;
+        }
+
+        @include desktop-4k {
+            height: 1.25rem;
+            margin-top: 0;
         }
     }
 
@@ -38,59 +81,137 @@
         height: 100%;
         overflow: hidden;
 
-        @include mobile {
-            transform: none !important;
-        }
+        @include mobile {}
 
         .wrapper {
             max-width: 1366px;
-            height: 100%;
-            margin: auto;
             display: flex;
             align-items: center;
             justify-self: center;
+            flex-direction: row;
             gap: 50px;
 
             @include mobile {
                 flex-direction: column;
-                margin-top: 25%;
+            }
+
+            @include tablet {
+                flex-direction: column;
+            }
+
+            @include desktop {
+                flex-direction: row;
+                gap: 0;
+                margin-top: 5rem;
+            }
+
+            @include desktop-lg {
+                flex-direction: row;
+                gap: 0;
+                margin-top: 5rem;
+            }
+
+            @include desktop-4k {
+                flex-direction: row;
+                gap: 0;
+                margin-top: 5rem;
             }
 
             .imageContainer {
                 flex: 1;
-                height: 50%;
+                height: 100%;
+                width: 100%;
 
-                @include mobile {
-                    width: 100%;
-                    max-height: 300px;
+                @include desktop-4k {
+                    flex: 1;
+                    max-height: 23rem;
                 }
 
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
 
                     @include mobile {
-                        margin-top: 5%;
+                        width: 100%;
+                        height: 100%;
+                        padding: 2rem;
                         object-fit: contain;
                     }
+
+                    @include tablet {
+                        width: 60%;
+                        height: 100%;
+                        margin-left: 9.5rem;
+                        padding: 2rem;
+                        object-fit: contain;
+                    }
+
+                    @include desktop {
+                        width: 110%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
+                    @include desktop-lg {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
+                    @include desktop-4k {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
                 }
             }
 
             .textContainer {
+                max-width: 1366px;
                 flex: 1;
                 display: flex;
                 flex-direction: column;
+                padding-top: 50px;
                 gap: 30px;
+                margin-left: 18%;
+                margin-right: 18%;
+                align-items: center;
+                text-align: center;
 
                 @include mobile {
-                    transform: none !important;
-                    max-width: 1366px;
-                    padding-top: 50px;
-                    align-items: center;
-                    text-align: center;
-                    margin-left: 18%;
-                    margin-right: 18%;
+                    margin-top: -13rem;
+                    margin-left: 3rem;
+                    margin-right: 3rem;
+                    gap: 1.25rem;
+                    padding-top: 4rem;
+                }
+
+                @include tablet {
+                    margin-top: -7rem;
+                    margin-left: 3rem;
+                    margin-right: 3rem;
+                }
+
+                @include desktop {
+                    transform: unset;
+                    padding-top: 0;
+                    margin-top: 0;
+                }
+
+                @include desktop-lg {
+                    padding-top: 0;
+                    margin-top: 0;
+                }
+
+                @include desktop-4k {
+                    margin-top: 2rem;
+                    margin-left: 3rem;
+                    margin-right: 3rem;
                 }
 
                 h2 {
@@ -98,7 +219,24 @@
                     color: orange;
 
                     @include mobile {
-                        font-size: 36px;
+                        font-size: 1.25rem;
+                        padding-top: 1rem;
+                    }
+
+                    @include tablet {
+                        font-size: 1.5rem;
+                    }
+
+                    @include desktop {
+                        font-size: 1.75rem;
+                    }
+
+                    @include desktop-lg {
+                        font-size: 2.25rem;
+                    }
+
+                    @include desktop-4k {
+                        font-size: 2.5rem;
                     }
                 }
 
@@ -107,7 +245,23 @@
                     font-size: 20px;
 
                     @include mobile {
-                        font-size: 16px;
+                        font-size: 0.75rem;
+                    }
+
+                    @include tablet {
+                        font-size: 0.75rem;
+                    }
+
+                    @include desktop {
+                        font-size: 1rem;
+                    }
+
+                    @include desktop-lg {
+                        font-size: 1.25rem;
+                    }
+
+                    @include desktop-4k {
+                        font-size: 1.5rem;
                     }
                 }
 
@@ -118,6 +272,15 @@
                     padding: 10px;
                     width: 200px;
                     cursor: pointer;
+
+                    @include mobile {
+                        background-color: orange;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 10px;
+                        width: 8rem;
+                        cursor: pointer;
+                    }
                 }
             }
         }
