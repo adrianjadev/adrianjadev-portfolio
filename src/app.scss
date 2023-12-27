@@ -27,8 +27,15 @@ section {
 }
 
 // For the Mobile Responsiveness
+
+// @mixin mobile-ip {
+//     @media (min-width: 390px) {
+//         @content;
+//     }
+// }
+
 @mixin mobile {
-    @media (min-width: 425px) {
+    @media only screen and (min-width: 414px) {
         @content;
     }
 }
@@ -38,6 +45,8 @@ section {
         @content;
     }
 }
+
+
 
 @mixin desktop {
     @media (min-width: 1024px) and (max-width:1439px) {

@@ -21,7 +21,7 @@ const Techstacks = () => {
     return (
         <div className="techstacks">
             <div className="textContainer">
-                <h1>My Tech Stacks</h1>
+                <h1>Here's my current Tech Stacks:</h1>
             </div>
             <div className="container">
                 <div className="wrapper">

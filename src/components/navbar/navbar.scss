@@ -58,6 +58,13 @@
                 display: none;
             }
 
+            // @include mobile-ip {
+            //     flex: 1;
+            //     justify-content: flex-end;
+            //     padding: 15px;
+            //     margin-right: 1rem;
+            // }
+
             @include tablet {
                 display: none;
             }
@@ -97,6 +104,11 @@
                     @include mobile {
                         font-size: 15px;
                     }
+
+                    // @include mobile-ip {
+                    //     font-size: 50px;
+                    //     // display: none;
+                    // }
 
                     @include tablet {
                         font-size: 25px;

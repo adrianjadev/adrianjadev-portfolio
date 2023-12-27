@@ -32,9 +32,26 @@
             font-size: 100px;
             line-height: 88px;
             color: orange;
+            padding-bottom: 2rem;
 
             @include mobile {
-                font-size: 60px;
+                font-size: 2rem;
+            }
+
+            @include tablet {
+                font-size: 2rem;
+            }
+
+            @include desktop {
+                font-size: 2rem;
+            }
+
+            @include desktop-lg {
+                font-size: 2rem;
+            }
+
+            @include desktop-4k {
+                font-size: 5rem;
             }
         }
 
@@ -44,7 +61,23 @@
             font-size: 36px;
 
             @include mobile {
-                font-size: 30px;
+                font-size: 1.25rem;
+            }
+
+            @include tablet {
+                font-size: 1.25rem;
+            }
+
+            @include desktop {
+                font-size: 1.75rem;
+            }
+
+            @include desktop-lg {
+                font-size: 2rem;
+            }
+
+            @include desktop-4k {
+                font-size: 2rem;
             }
         }
 
@@ -53,7 +86,23 @@
             font-size: 30px;
 
             @include mobile {
-                font-size: 20px;
+                font-size: 1rem;
+            }
+
+            @include tablet {
+                font-size: 1.5rem;
+            }
+
+            @include desktop {
+                font-size: 1.75rem;
+            }
+
+            @include desktop-lg {
+                font-size: 1.75rem;
+            }
+
+            @include desktop-4k {
+                font-size: 1.75rem;
             }
         }
     }
@@ -61,10 +110,26 @@
     .formContainer {
         flex: 1;
         position: relative;
+        padding: 50px;
 
         @include mobile {
             width: 100%;
-            padding: 50px;
+        }
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include desktop {
+            width: 75%;
+        }
+
+        @include desktop-lg {
+            width: 75%;
+        }
+
+        @include desktop-4k {
+            width: 75%;
         }
 
         .phoneSvg {
@@ -83,6 +148,34 @@
                     margin-top: -15%;
                     margin-left: 13%;
                 }
+
+                @include tablet {
+                    width: 65%;
+                    height: 65%;
+                    margin-top: -15%;
+                    margin-left: 13%;
+                }
+
+                @include desktop {
+                    width: 65%;
+                    height: 65%;
+                    margin-top: -15%;
+                    margin-left: 13%;
+                }
+
+                @include desktop-lg {
+                    width: 75%;
+                    height: 75%;
+                    margin-top: -15%;
+                    margin-left: 17%;
+                }
+
+                @include desktop-4k {
+                    width: 80%;
+                    height: 80%;
+                    margin-top: -15%;
+                    margin-left: 17%;
+                }
             }
         }
 
@@ -90,17 +183,18 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            padding: 10px;
+            margin-top: -100px;
 
-            @include mobile {
-                padding: 10px;
-                margin-top: -80px;
+            @include desktop-4k {
+                padding-top: -5rem;
             }
 
         }
 
         input,
         textarea {
-            padding: 20px;
+            padding: 1rem;
             background-color: transparent;
             border: 1px solid white;
             color: white;
@@ -108,8 +202,23 @@
             font-size: 23px;
 
             @include mobile {
-                padding: 15px;
-                color: white;
+                font-size: 0.75rem;
+            }
+
+            @include tablet {
+                font-size: 0.80rem;
+            }
+
+            @include desktop {
+                font-size: 0.85rem;
+            }
+
+            @include desktop-lg {
+                font-size: 1rem;
+            }
+
+            @include desktop-4k {
+                font-size: 1.5rem;
             }
         }
 
@@ -122,7 +231,28 @@
             font-size: 23px;
 
             @include mobile {
-                padding: 10px;
+                padding: 0.5rem;
+                font-size: 0.75rem;
+            }
+
+            @include tablet {
+                padding: 0.5rem;
+                font-size: 0.80rem;
+            }
+
+            @include desktop {
+                padding: 0.5rem;
+                font-size: 0.85rem;
+            }
+
+            @include desktop-lg {
+                padding: 0.5rem;
+                font-size: 1rem;
+            }
+
+            @include desktop-4k {
+                padding: 0.5rem;
+                font-size: 1.5rem;
             }
         }
     }

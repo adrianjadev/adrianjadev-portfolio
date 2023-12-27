@@ -32,8 +32,8 @@
             }
 
             @include desktop-4k {
-                font-size: 9rem;
-                // padding-top: 12rem;
+                font-size: 5rem;
+                padding-top: 10rem;
             }
         }
     }
@@ -45,10 +45,23 @@
         justify-content: center;
 
         @include mobile {
-            display: flex;
-            overflow: hidden;
-            align-items: center;
-            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        @include tablet {
+            margin-top: 2rem;
+        }
+
+        @include desktop {
+            margin-top: 3rem;
+        }
+
+        @include desktop-lg {
+            margin-top: 3rem;
+        }
+
+        @include desktop-4k {
+            margin-top: 3rem;
         }
 
         .wrapper {
@@ -123,8 +136,8 @@
                     }
 
                     @include desktop-4k {
-                        height: 15rem;
-                        width: 15rem;
+                        height: 12rem;
+                        width: 12rem;
                         padding: 1rem;
 
 
